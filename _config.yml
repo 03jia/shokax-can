@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://03jia.github.io/shokax-can
+url: www.yanjia999.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -110,7 +110,7 @@ markdown:
     breaks: true # 转换段落里的 '\n' 到 <br>。
     linkify: true # 将类似 URL 的文本自动转换为链接。
     typographer:
-    quotes: "“”‘’"
+    quotes: ""
   plugins: # markdown-it 插件设置
     - plugin:
         name: markdown-it-toc-and-anchor
