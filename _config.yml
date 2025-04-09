@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ShokaX Can
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: zh-cn
+title: A Programming and AI enthusiastic
+subtitle: '记录所学，分享所得'
+description: '记录所学，分享所得'
+keywords: AI、Programming
+author: xiaoYu
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
