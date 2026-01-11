@@ -2,14 +2,13 @@
 title: 【MyBatis 核心工作机制】注解式开发与动态代理原理
 keywords: []
 categories:
-  - []
+  - [后端,框架,MyBatis]
 tags:
-  - null
-  - null
+  - MyBatis
 date: 2024-12-24 22:44:11
 updated:
-description:
-cover:
+description: "回顾 MyBatis 注解式开发与动态代理原理，解释注解方式如何简化 SQL 映射与执行。"
+cover: "https://s2.loli.net/2026/01/12/SCu6eQWzMcF4afD.jpg"
 ---
 
 > 有很多朋友可能已经在开发中熟练使用 MyBatis  或者刚开始学习 MyBatis，对于它的一些工作机制不太了解。“咦，怎么写几个注解，写几个配置文件，就能实现这些效果呢，好神奇呀！”当你看完这篇博客之后，你会不经赞叹 MyBatis 框架设计者的巧妙，并且会帮助你理解这个工作机制。

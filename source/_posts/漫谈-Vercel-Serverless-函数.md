@@ -2,14 +2,14 @@
 title: 漫谈 Vercel Serverless 函数
 keywords: []
 categories:
-  - []
+  - 概念
 tags:
-  - null
-  - null
+  - Serverless
+  - Vercel
 date: 2024-12-16 23:32:09
 updated:
-description:
-cover:
+description: "解释什么是 Serverless，并介绍 Vercel Serverless 函数的概念与按需执行特性。"
+cover: "https://s2.loli.net/2026/01/12/yq3bKj1Ghfa4XQF.jpg"
 ---
 > 我们需要明白什么是 **Serverless**。顾名思义，Serverless 并不是没有服务器，而是 **“不需要你管理服务器”**。就像你去超市买东西，不用自己去种菜、养鸡，直接挑选、付款就好。Vercel 的 Serverless 函数也是类似的，它**帮你自动管理基础设施**，你只需专注于编写处理逻辑，Vercel 会负责其余的部分。
 >

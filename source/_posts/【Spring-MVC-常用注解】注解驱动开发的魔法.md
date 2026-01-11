@@ -2,14 +2,14 @@
 title: 【Spring MVC 常用注解】注解驱动开发的魔法
 keywords: []
 categories:
-  - []
+    - [后端,框架,Spring MVC]
 tags:
-  - null
-  - null
+    - Spring MVC
+    - 注解式开发
 date: 2024-12-28 21:30:00
 updated:
-description:
-cover:
+description: "列举并解释 Spring MVC 常用注解，展示它们如何简化请求处理与参数绑定。"
+cover: "https://s2.loli.net/2026/01/11/e3DkEzfA41MnJKu.jpg"
 ---
 > 在 Spring MVC 中，注解可以说是开发者的“魔法棒”，通过简单的注解配置，开发者能够实现**请求处理、参数绑定、响应返回**等复杂功能，真正做到**“少写代码多干活”**。
 >

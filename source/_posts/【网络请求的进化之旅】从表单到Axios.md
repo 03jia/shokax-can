@@ -2,12 +2,13 @@
 title: 【网络请求的进化之旅】从表单到Axios
 keywords: []
 categories:
-  - 前端
+  - 不知怎么分类
 tags:
+  - HTTP
   - Axios
 date: 2024-12-13 23:55:25
 updated:
-description:
+description: "回顾网络请求从表单提交、XHR 到 Fetch 与 Axios 的演进，说明各阶段的痛点与改进。"
 cover:
 ---
 > 不知道有没有朋友跟我一样，现在直接用 **Axios** 封装好的网络请求方式觉得很香，轻松发送请求、处理响应，仿佛一切都很顺畅。但有时也会想，为什么我们要用这些工具？为什么一开始的网络请求方式不行呢？

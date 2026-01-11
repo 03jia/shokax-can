@@ -2,13 +2,13 @@
 title: 【Spring核心思想】面向切面编程（AOP）
 keywords: []
 categories:
-  - []
+    - [后端,框架,Spring]
 tags:
-  - null
-  - null
+    - Spring
+    - AOP
 date: 2024-12-22 15:52:36
 updated:
-description:
+description: "介绍 AOP 的核心概念与作用，讲解如何通过切面解耦横切关注点并在 Spring 中实现。"
 cover:
 
 ---

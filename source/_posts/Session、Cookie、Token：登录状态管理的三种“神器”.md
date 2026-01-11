@@ -2,14 +2,15 @@
 title: Session、Cookie、Token：登录状态管理的三种“神器”
 keywords: []
 categories:
-  - []
+    - 概念
 tags:
-  - null
-  - null
+    - Session
+    - Cookie
+    - Token
 date: 2025-01-02 21:20:13
 updated:
-description:
-cover:
+description: "比较 Session、Cookie 与 Token 三种登录状态管理方式的原理、优缺点与适用场景。"
+cover: "https://s2.loli.net/2026/01/11/kE85wcBxH6ngrLX.jpg"
 ---
 > 在开发中，用户登录后如何确认“这个人是我”？系统又如何在安全的前提下维持**用户状态**？我们带着这些疑问，聊聊三种常见的登录状态管理方式：**Session**、**Cookie** 和 **Token**。并且我会用生动的例子和比喻描述这些概念。
 

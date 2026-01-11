@@ -2,13 +2,13 @@
 title: 【Vue3 组件通信全攻略】实战与解析
 keywords: []
 categories:
-  - []
+  - [前端,框架,Vue]
 tags:
-  - null
-  - null
+  - Vue3
+  - 组件通信
 date: 2024-12-18 23:55:44
 updated:
-description:
+description: "汇总并解析 Vue3 常见组件通信方式与实战场景，帮助根据需求选择合适方案。"
 cover:
 ---
 

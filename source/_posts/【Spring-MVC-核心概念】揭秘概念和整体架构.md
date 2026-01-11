@@ -2,14 +2,14 @@
 title: 【Spring MVC 核心概念】揭秘概念和整体架构
 keywords: []
 categories:
-  - []
+    - [后端,框架,Spring MVC]
 tags:
-  - null
-  - null
+    - Spring MVC
+    - MVC
 date: 2024-12-26 23:04:58
 updated:
-description:
-cover:
+description: "概述 Spring MVC 的整体架构与核心概念，便于理解请求从入口到响应的完整流程。"
+cover: "https://s2.loli.net/2026/01/12/sizW7nhweuKpUQX.jpg"
 ---
 > 你有没有想过，当你在浏览器地址栏敲下一个 URL，按下回车，后台到底发生了什么？如果你用的是 Spring MVC，那这一切其实被精妙地拆解成了 **三大块：Model、View 和 Controller**，共同完成了这次的任务，也就是大名鼎鼎的 **MVC架构**
 >

@@ -2,14 +2,13 @@
 title: 【MyBatis-Plus 条件构造器】全面解析 Wrapper
 keywords: []
 categories:
-  - []
+    - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+    - MyBatis-Plus
 date: 2025-01-08 21:58:15
 updated:
-description:
-cover:
+description: "全面解析 MyBatis-Plus 的条件构造器（Wrapper），用于动态拼接 SQL 条件、链式调用与复杂逻辑处理。"
+cover: "https://s2.loli.net/2026/01/11/9gh7NmOcj26HYlW.jpg"
 ---
 > 在 MyBatis-Plus 中，<font color="red"> **条件构造器**</font> 是一个强大的工具，能够帮助我们灵活地构建 SQL 查询条件，而无需手写繁琐的 SQL 语句。本文将从基础到高级，带你全面了解条件构造器的使用方法及其链式构造能力。
 

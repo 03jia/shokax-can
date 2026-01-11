@@ -2,14 +2,13 @@
 title: 【MyBatis-Plus 核心接口】BaseMapper 和 IService 深度解析
 keywords: []
 categories:
-  - []
+  - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+  - MyBatis-Plus
 date: 2025-01-05 21:50:15
 updated:
-description:
-cover:
+description: "深度解析 `BaseMapper` 与 `IService` 的职责与差异，展示如何利用它们简化 CRUD 与业务扩展。"
+cover: "https://s2.loli.net/2026/01/11/bUlCdGXLkijvaP4.jpg"
 ---
 > 在使用 MyBatis-Plus（简称 MP）进行开发时，**`BaseMapper` 和 `IService` 接口**是我们老朋友了，不知道你会不会跟我一样好奇：为什么实现了 `BaseMapper` 或 `IService` 接口，我们就能轻松操作数据库？这背后有哪些工作机制？本文将带你一步步探究，并结合 CRUD 操作分类讲解两者的常用方法。希望这篇博客讲解能给你带来一些收获😘
 

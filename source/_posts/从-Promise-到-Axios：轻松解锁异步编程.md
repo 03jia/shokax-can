@@ -2,14 +2,16 @@
 title: 从 Promise 到 Axios：轻松解锁异步编程
 keywords: []
 categories:
-  - []
+  - [前端,语言,JavaScript]
 tags:
-  - null
-  - null
+  - JavaScript
+  - Promise
+  - Async/Await
+  - Axios
 date: 2024-12-17 23:25:38
 updated:
-description:
-cover:
+description: "从回调到 Promise 与 Async/Await，再到使用 Axios，系统介绍现代 JavaScript 异步编程的演进与实践。"
+cover: "https://s2.loli.net/2026/01/12/qMSVNWespi3KlLz.png"
 ---
 > 如果你正在开发中处理异步任务，比如网络请求、文件操作，或者用户交互的处理，那么你一定接触过 **Promise** 和 **Async/Await**。它们是现代 **JavaScript 异步编程**的基石。本文将带你一步步深入了解，帮助你弄清它们的背景、解决的问题以及实际应用。希望这篇内容不仅能帮你理清思路，还能让你在开发时更得心应手。
 

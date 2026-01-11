@@ -2,14 +2,13 @@
 title: 【Spring MVC 异常处理机制】应对意外情况
 keywords: []
 categories:
-  - []
+    - [后端,框架,Spring MVC]
 tags:
-  - null
-  - null
+    - Spring MVC
 date: 2024-12-31 19:00:00
 updated:
-description:
-cover:
+description: "讲解 Spring MVC 中局部与全局异常处理策略，以及如何使用自定义异常规范化错误响应。"
+cover: "https://s2.loli.net/2026/01/11/GkWjn2b7QFuVqiB.jpg"
 ---
 > 在 Web 应用中，**异常**是不可避免的。用户的**输入不合法**，服务的某部分出错，或者**数据库**连接失败，这些情况都可能**触发异常**。那么问题来了：如何优雅地捕获并处理这些异常，让用户体验不至于因为一时的错误而受损？
 >

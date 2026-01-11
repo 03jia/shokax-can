@@ -2,14 +2,14 @@
 title: 【Java 新特性】Optional类全面解析
 keywords: []
 categories:
-  - []
+  - [后端,语言,Java]
 tags:
-  - null
-  - null
+  -Java
+  - Optional
 date: 2025-01-07 09:00:00
 updated:
-description:
-cover:
+description: "介绍 Java Optional 的目的和用法，帮助避免空指针并更明确地表示可为空值。"
+cover: "https://s2.loli.net/2026/01/11/6vcCBY78kilbdqo.jpg"
 ---
 >  在日常开发中，**空指针异常（NullPointerException）** 可以说是开发者最常见的敌人。Java 8 引入的 **`Optional`** 就是一件专门对付它的利器。Optional 为我们提供了一种优雅的方式来处理可能为 null 的值，避免了繁琐的空值判断，同时让代码更安全、可读性更强。
 

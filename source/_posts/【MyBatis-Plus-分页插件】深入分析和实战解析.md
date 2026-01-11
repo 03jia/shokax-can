@@ -2,14 +2,14 @@
 title: 【MyBatis-Plus 分页插件】深入分析和实战解析
 keywords: []
 categories:
-  - []
+  - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+  - 分页
+  - MyBatis-Plus
 date: 2025-01-12 21:28:06
 updated:
-description:
-cover:
+description: "介绍了 MyBatis-Plus 的分页机制与 `IPage`/`Page` 的用法，说明分页在减少数据传输和提升性能中的作用。"
+cover: "https://s2.loli.net/2026/01/11/s6AKfIi1G8THlOy.jpg"
 ---
 > 分页是 Web 应用开发中的高频需求，而在 MyBatis 的生态中，<font color="red">**MyBatis-Plus 分页插件`PaginationInnerInterceptor`**</font> 和 **MyBatis 的 `PageHelper`** 是两种常见的实现方案。本文将通过 **工作机制**、**使用方法** 和 **细节剖析**，带你循序渐进地掌握这两种方式，并为你的项目选择提供指导。
 

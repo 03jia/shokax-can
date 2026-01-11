@@ -2,14 +2,13 @@
 title: 【MyBatis-Plus】让 MyBatis 更简单高效
 keywords: []
 categories:
-  - []
+    - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+    - MyBatis-Plus
 date: 2025-01-01 18:44:37
 updated:
-description:
-cover:
+description: "介绍 MyBatis-Plus 的核心特性与优势，说明如何简化常见数据库操作并提升开发效率。"
+cover: "https://s2.loli.net/2026/01/11/CmFdTEKWNGphgab.jpg"
 ---
 >  如果你曾经使用过 **MyBatis**，你一定知道它的强大和灵活。然而，随着项目规模的增长，手写 SQL 成为了一件既繁琐又容易出错的事。这时，**MyBatis-Plus**（简称 MP）应运而生，它为 MyBatis 增强了许多功能，帮我们极大地提高开发效率。接下来，我们就来聊聊 MyBatis-Plus 的基本介绍和使用，让你轻松上手！
 

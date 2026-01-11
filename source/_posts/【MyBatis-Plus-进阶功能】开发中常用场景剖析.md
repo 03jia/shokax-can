@@ -2,14 +2,14 @@
 title: 【MyBatis-Plus 进阶功能】开发中常用场景剖析
 keywords: []
 categories:
-  - []
+    - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+    - MyBatis-Plus
 date: 2025-01-10 19:00:00
 updated:
-description:
+description: "讲解 MyBatis-Plus 的逻辑删除、自动填充与多表关联等进阶功能及典型使用场景。"
 cover:
+cover: "https://s2.loli.net/2026/01/11/WkUbB5m6jLO1gSH.jpg"
 ---
 > MyBatis-Plus（MP）除了封装常见的 CRUD 操作，还提供了一些高级功能，进一步简化复杂场景下的开发工作。本文将逐一讲解 **逻辑删除**、**自动填充**、**多表关联查询**的原理与使用方式，让你快速掌握这些技巧！
 

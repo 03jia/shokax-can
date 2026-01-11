@@ -2,14 +2,14 @@
 title: 【MyBatis核心概念】精简持久层开发
 keywords: []
 categories:
-  - []
+    - [后端,框架,MyBatis]
 tags:
-  - null
-  - null
+    - MyBatis
+    - 持久层
 date: 2024-12-23 11:00:00
 updated:
-description:
-cover:
+description: "概述 MyBatis 的核心概念与设计理念，说明其如何帮助精简持久层开发工作。"
+cover: "https://s2.loli.net/2026/01/12/xWKjGAiFEwrgdka.jpg"
 ---
 > 在 Java 开发中，**与数据库的交互**是不可或缺的一部分。传统的 JDBC 操作虽然功能强大，但却伴随着冗长的代码、复杂的资源管理和难以维护的 SQL 嵌入。而 MyBatis 作为一款轻量级的**持久层框架**，凭借灵活的 SQL 管理、便捷的对象映射和出色的扩展性，成为了解决这些痛点的理想选择。
 >

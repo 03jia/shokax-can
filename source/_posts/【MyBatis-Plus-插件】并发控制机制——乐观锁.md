@@ -2,14 +2,14 @@
 title: 【MyBatis-Plus 插件】并发控制机制——乐观锁
 keywords: []
 categories:
-  - []
+   - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+   - MyBatis-Plus
+   - 乐观锁
 date: 2025-01-11 13:48:44
 updated:
-description:
-cover:
+description: "介绍 MyBatis-Plus 的乐观锁机制及其在高并发场景下防止数据覆盖的应用与注意事项。"
+cover: "https://s2.loli.net/2026/01/11/vNtLwZCVOBYngMF.jpg"
 ---
 > 乐观锁是一种<font color='red'>**非阻塞的并发控制机制**</font>，在多线程环境中确保数据一致性。MyBatis-Plus 使用 `@Version` 注解和乐观锁插件轻松实现这一功能。在正式介绍乐观锁之前，我们先来聊一聊没有乐观锁时会出现的问题，以及它解决的痛点。
 

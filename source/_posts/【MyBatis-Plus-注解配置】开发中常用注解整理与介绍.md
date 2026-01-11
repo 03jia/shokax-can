@@ -2,14 +2,14 @@
 title: 【MyBatis-Plus 注解配置】开发中常用注解整理与介绍
 keywords: []
 categories:
-  - []
+  - [后端,框架,MyBatis-plus]
 tags:
-  - null
-  - null
+  - MyBatis-Plus
+  - 注解式开发
 date: 2025-01-13 18:26:32
 updated:
-description:
-cover:
+description: "整理并介绍了 MyBatis-Plus 在 SpringBoot 开发中常用的注解，帮助清晰区分各注解的用途与用法。"
+cover: "https://s2.loli.net/2026/01/11/9U6Ktu5iIkDPGzA.jpg"
 ---
 > 不知道朋友们会不会在`SpringBoot`中集成`MyBatis-Plus`的时候，总是这个注解那个注解，都不知道哪些是`MyBatis-Plus`的了，搞得晕乎乎的，所以我整理了一份`MyBatis-Plus`开发中常用的注解，相信看完你就知道哪些注解是`MyBatis-Plus`提供的了，以后在开发中就能够更加清晰了
 

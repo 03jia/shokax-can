@@ -2,13 +2,13 @@
 title: 【现代服务端架构】传统服务器 对比 Serverless
 keywords: []
 categories:
-  - []
+  - 概念
 tags:
-  - null
-  - null
+  - Serverless
+  - 服务器
 date: 2024-12-15 22:39:13
 updated:
-description:
+description: "对比传统服务器架构与 Serverless 模式，解释两者的差异、优缺点与适用场景。"
 cover:
 ---
 > 在现代开发中，选择合适的架构是至关重要的。两种非常常见的架构模式分别是 **传统服务器架构** 和 **Serverless**。它们各有优缺点，适合不同的应用场景。今天，我就带大家一起对比这两种架构，看看它们的差异，并且帮助你选择最适合你的方式。
