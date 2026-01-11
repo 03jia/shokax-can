@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:34:30
+date: 2024-12-20 23:26:58
 updated:
 description:
 cover:
@@ -27,8 +27,6 @@ users.add("Alice");
 users.add("Bob");
 System.out.println(users.get(1)); // 输出 Bob
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **底层结构**：`ArrayList` 使用一个 **动态数组** 来存储元素。初始时，数组的大小是固定的，当元素超过数组的容量时，会自动扩展数组的大小。
 
@@ -57,8 +55,6 @@ tasks.addLast("Task2");
 tasks.removeFirst();
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **底层结构**：`LinkedList` 使用 **双向链表**，每个元素都有**两个指针**：一个指向前一个元素，一个指向下一个元素。这样可以在常数时间内插入或删除元素。
 
 **优点**：
@@ -75,7 +71,7 @@ tasks.removeFirst();
 >
 > 这只涉及 4 次指针操作，与链表的长度无关，因此在已定位到目标节点后，插入操作的时间复杂度为 **`O(1)`**。
 >
-> ![img](assets/098a06dd19514e5c895fc0cf8e0ea672-1768138492224-40.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+> ![img](assets/8CNo5xe6ZVSg3QJ.png)
 
 **缺点**：
 
@@ -99,8 +95,6 @@ usernames.add("Bob");
 usernames.add("Alice"); // 重复的元素会被忽略
 System.out.println(usernames.size()); // 输出 2
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **底层结构**：`HashSet` 使用 **哈希表**（`HashMap`）【哈希表在文末有**补充讲解**】来存储元素。哈希表通过将元素的哈希码映射到表中的桶来进行存储，确保元素是唯一的。
 
@@ -130,8 +124,6 @@ products.add("Laptop"); // 再次添加无效
 System.out.println(products); // 输出 [Laptop, Phone]
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **底层结构**：`LinkedHashSet` 使用一个 **哈希表** 来存储元素，并通过一个 **双向链表** 来维护元素的插入顺序。
 
 **优点**：
@@ -157,11 +149,9 @@ scores.add(70);
 System.out.println(scores); // 输出 [50, 70, 80]
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **底层结构**：`TreeSet` 使用 **红黑树** 来存储元素。红黑树是一种自平衡的二叉搜索树，能够确保树的深度保持在对数级别。
 
-![img](assets/7e017ce609914c8e8449e0f32560e1d1.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+![img](https://s2.loli.net/2026/01/11/bBX3flQH9LG5Ykr.png)
 
 **优点**：
 
@@ -186,8 +176,6 @@ userMap.put(1, "Alice");
 userMap.put(2, "Bob");
 System.out.println(userMap.get(1)); // 输出 Alice
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **底层结构**：`HashMap` 使用 **哈希表** 来存储键值对，通过键的哈希码来确定存储位置。
 
@@ -216,8 +204,6 @@ accessLog.put(3, "SettingsPage");
 System.out.println(accessLog); // 输出 {1=HomePage, 2=ProfilePage, 3=SettingsPage}
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **底层结构**：`LinkedHashMap` 使用 **哈希表** 存储元素，并通过 **双向链表** 维护元素的插入顺序。
 
 **优点**：
@@ -242,8 +228,6 @@ sortedMap.put(1, "A");
 sortedMap.put(2, "B");
 System.out.println(sortedMap); // 输出 {1=A, 2=B, 3=C}
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - **底层结构**：`TreeMap` 使用 **红黑树** 来存储键值对，按照键的自然顺序（或通过指定的 `Comparator`）进行排序。
 - **优点**：
@@ -288,8 +272,6 @@ public class PropertiesExample {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **底层结构**
 

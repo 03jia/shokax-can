@@ -80,8 +80,6 @@ server {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 3. Node.js：高效处理后端逻辑和API请求
 
 Node.js作为后端技术，专注于处理API请求和业务逻辑。它以**非阻塞I/O**和**事件驱动架构**闻名，能够在**高并发的情况下保证性能**。
@@ -101,8 +99,6 @@ app.listen(3000, () => {
     console.log('API server running on port 3000');
 });
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 4. 生产环境服务器的特点：
 

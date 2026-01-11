@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:25:41
+date: 2024-12-11 18:20:04
 updated:
 description:
 cover:
@@ -24,7 +24,7 @@ Vite，意为“快”（法语中读作 `/vit/`）。它由 Vue.js 的作者**�
 
 我们来看看官网中的效果图，他的功能之一是把所有需要编译的文件，不用分多个对应的编译工具，而是直接通过一个 Vite 就能变成浏览器能识别的原生 HTML、CSS、JavaScript 文件：
 
-![img](assets/43240a707d3b411e95a57b82780aead2.gif)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+![img](assets/43240a707d3b411e95a57b82780aead2.gif)编辑
 
 > **【另外，Vite还提供了模板解析功能】**
 >
@@ -36,7 +36,7 @@ Vite，意为“快”（法语中读作 `/vit/`）。它由 Vue.js 的作者**�
 >  import { useUserStore } from '@/stores/user'  // 不需要 .ts
 > ```
 >
-> ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+> 
 >
 > - **构建阶段**：构建工具会自动处理并添加正确的文件扩展名，将代码编译成浏览器可以直接运行的静态资源，生成最终的生产环境文件
 
@@ -72,8 +72,6 @@ Vite 还为静态资源提供了优雅的解决方案。无论是图片、字体
 const logo = await import('@/assets/logo.png');
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 2. 别名支持
 
 想象一下，不用再写一大串 `../../../assets/logo.png`，通过别名直接写成 `@/assets/logo.png`，路径整洁心情都变好了！
@@ -87,8 +85,6 @@ resolve: {
   },
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ## 五、插件：你的功能扩展宝库
 
@@ -108,8 +104,6 @@ Vite 的插件机制就像给开发加了外挂。你可以用官方插件支持
 npm install @vitejs/plugin-vue --save-dev
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 使用：
 
 ```TypeScript
@@ -118,10 +112,6 @@ export default defineConfig({
   plugins: [vue()],
 });
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
-
 
 ## 六、TypeScript：更安全的开发方式
 
@@ -134,8 +124,6 @@ defineProps<{ title: string }>();
 const emit = defineEmits<(event: 'submit') => void>();
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 2. 全局类型声明：
 
 ```TypeScript
@@ -145,8 +133,6 @@ declare module '*.vue' {
   export default component;
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 3. 类型检查插件
 
@@ -158,8 +144,6 @@ export default defineConfig({
   plugins: [checker({ typescript: true })],
 });
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ## 七、Vite 的预打包机制详解
 
@@ -197,7 +181,6 @@ Vite 提供了灵活的配置项，允许开发者手动调整预打包行为：
   });
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > 【**预打包的注意事项**】
 >
@@ -313,8 +296,6 @@ export default defineConfig({
   },
 });
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > **为了让大家更清晰的区分一些路径配置项，我们来细说一下几个配置项的区别：**
 >

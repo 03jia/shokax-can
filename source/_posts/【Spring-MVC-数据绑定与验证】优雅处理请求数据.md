@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:42:44
+date: 2024-12-29 09:00:00
 updated:
 description:
 cover:
@@ -33,8 +33,6 @@ Spring MVC 会根据请求参数的名称，将数据绑定到 Java 对象的对
 </form>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **实体类**：
 
 ```java
@@ -44,8 +42,6 @@ public class User {
     // Getters and Setters
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 控制器方法：
 
@@ -57,8 +53,6 @@ public String registerUser(@ModelAttribute User user) {
     return "success";
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 当用户提交表单时，`name` 和 `age` 会自动映射到 `User` 对象中。
 
@@ -76,8 +70,6 @@ public String registerUser(@ModelAttribute User user) {
     return "success";
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 `@ModelAttribute` 的特点：
 
@@ -102,8 +94,6 @@ public String registerUser(@ModelAttribute User user) {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **控制器代码：**
 
 ```java
@@ -114,8 +104,6 @@ public String registerUser(@RequestBody User user) {
     return "success";
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **特点：**
 
@@ -185,8 +173,6 @@ public class User {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 控制器方法：
 
 ```java
@@ -202,8 +188,6 @@ public String registerUser(@Valid @ModelAttribute User user, BindingResult resul
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 请求数据：
 
 ```java
@@ -212,8 +196,6 @@ email=invalid-email
 age=17
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 校验结果：
 
 ```java
@@ -221,8 +203,6 @@ Name cannot be blank
 Invalid email address
 Age must be at least 18
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -245,8 +225,6 @@ public @interface ValidUsername {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **2、实现校验逻辑：**
 
 ```java
@@ -261,8 +239,6 @@ public class UsernameValidator implements ConstraintValidator<ValidUsername, Str
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **3、使用注解：**
 
 ```java
@@ -276,8 +252,6 @@ public class User {
     // Getters and Setters
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > 如果提交 `username=Alice!`，校验会失败，返回错误信息 `Invalid username`。
 
@@ -303,8 +277,6 @@ public class UserController {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

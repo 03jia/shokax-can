@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:31:58
+date: 2024-12-17 23:25:38
 updated:
 description:
 cover:
@@ -30,8 +30,6 @@ setTimeout(() => {
   }, 1000);
 }, 1000);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **问题来了：** 当任务需要按照一定顺序完成时，这种嵌套写法会变得非常混乱，特别是任务之间还需要处理错误或者传递结果的时候。于是，**Promise** 应运而生。
 
@@ -74,8 +72,6 @@ fetchData("https://api.example.com")
     console.error("失败：", error);
   });
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### **Promise 的几个重要点：**
 
@@ -121,8 +117,6 @@ const fetchDataAsync = async (url) => {
 fetchDataAsync("https://api.example.com");
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **优势：**
 
 - 代码更加直观，异步流程看起来像同步代码。
@@ -161,8 +155,6 @@ const fetchDataWithAxios = async () => {
 fetchDataWithAxios();
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### **全局错误处理与拦截器：**
 
 ```javascript
@@ -182,8 +174,6 @@ axios.interceptors.response.use(
   }
 );
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -214,8 +204,6 @@ const fetchUserAndOrders = async () => {
 
 fetchUserAndOrders();
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

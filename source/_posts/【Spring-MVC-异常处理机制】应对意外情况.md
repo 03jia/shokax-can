@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:43:56
+date: 2024-12-31 19:00:00
 updated:
 description:
 cover:
@@ -50,8 +50,6 @@ public class UserController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 > **运行效果**：
 >
 > - 当用户访问 `/user/-1` 时，抛出的 `IllegalArgumentException` 会被 `handleIllegalArgumentException` 方法捕获。
@@ -87,8 +85,6 @@ public class GlobalExceptionHandler {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > **运行效果**：
 >
@@ -127,8 +123,6 @@ public class GlobalRestExceptionHandler {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **运行效果**：
 
 例如请求 `/user/-1`，则会返回：
@@ -139,8 +133,6 @@ public class GlobalRestExceptionHandler {
     "message": "Invalid user ID"
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -173,8 +165,6 @@ public enum ErrorCode {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **自定义异常**
 
 ```java
@@ -192,7 +182,7 @@ public class CustomException extends RuntimeException {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+
 
 **统一异常处理**
 
@@ -210,8 +200,6 @@ public class GlobalCustomExceptionHandler {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > 【我们来对其中的一些代码片段做一些解释】
 >
@@ -236,8 +224,6 @@ public class GlobalCustomExceptionHandler {
   throw new CustomException(ErrorCode.INVALID_USER_ID);
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 响应结果： 
 
   ```java
@@ -248,7 +234,6 @@ public class GlobalCustomExceptionHandler {
   }
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

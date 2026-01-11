@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:37:18
+date: 2024-12-23 11:00:00
 updated:
 description:
 cover:
@@ -67,8 +67,6 @@ public class JdbcExample {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### MyBatis 的改进
 
 1. **减少重复代码**：MyBatis **管理连接和资源释放**，开发者只需关注业务逻辑。
@@ -93,8 +91,6 @@ public class JdbcExample {
 SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
     .build(Resources.getResourceAsStream("mybatis-config.xml"));
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 2.`SqlSession`：
 
@@ -127,8 +123,6 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
 
    > 如果你的项目结构遵循 MyBatis 推荐的标准规则，并且在配置中采用了 **扫描包**（如使用了 `@MapperScan` 注解或者在 Spring 配置中进行包扫描），那么可以省略 `<mappers>` 标签。
 
-
-
 **配置示例**
 
 ```java
@@ -150,8 +144,6 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
 </configuration>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ------
 
 ## 四. 基于注解的 MyBatis 程序
@@ -169,8 +161,6 @@ public interface UserMapper {
     User selectUserById(@Param("id") int id);
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -195,8 +185,6 @@ public interface UserMapper {
     User selectUserById(@Param("id") int id);
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

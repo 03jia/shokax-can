@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:46:15
+date: 2025-01-03 16:14:45
 updated:
 description:
 cover:
@@ -41,16 +41,12 @@ interface Calculator {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 实现时：
 
 ```java
 Calculator addition = (a, b) -> a + b;
 System.out.println(addition.calculate(5, 3)); // 输出：8
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -71,15 +67,11 @@ Runnable task = new Runnable() {
 };
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - **Lambda 表达式写法**：
 
 ```java
 Runnable task = () -> System.out.println("Hello, World!");
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 是不是清爽简洁多了？
 
@@ -111,8 +103,6 @@ Function<String, Integer> stringToLength = s -> s.length();
 System.out.println(stringToLength.apply("Hello")); // 输出：5
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 2. `Predicate`：判断条件是否成立
 
 ```java
@@ -121,16 +111,12 @@ System.out.println(isEven.test(4)); // 输出：true
 System.out.println(isEven.test(3)); // 输出：false
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 3. `Supplier`：无条件生成结果
 
 ```java
 Supplier<Double> randomSupplier = () -> Math.random();
 System.out.println(randomSupplier.get());
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 4. `Consumer`：处理输入，不返回结果
 
@@ -139,8 +125,6 @@ Consumer<String> logger = message -> System.out.println("Log: " + message);
 logger.accept("Application started"); // 输出：Log: Application started
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 5. `UnaryOperator`：对输入进行一元操作
 
 ```java
@@ -148,16 +132,12 @@ UnaryOperator<Integer> increment = n -> n + 1;
 System.out.println(increment.apply(5)); // 输出：6
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 6. `BinaryOperator`：对两个输入进行二元操作
 
 ```java
 BinaryOperator<Integer> max = (a, b) -> a > b ? a : b;
 System.out.println(max.apply(5, 10)); // 输出：10
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -172,8 +152,6 @@ List<Integer> mapList = integersList.stream()
     .toList();
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 2. 使用 `Function` 实现多步转换
 
 就像流水线上的加工流程，一个任务接着另一个任务：
@@ -185,8 +163,6 @@ Function<Integer, Integer> add3 = x -> x + 3;
 Function<Integer, Integer> combined = multiplyBy2.andThen(add3);
 System.out.println(combined.apply(5)); // 输出：13
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 3. 使用 `Predicate` 实现复杂条件判断
 
@@ -202,8 +178,6 @@ System.out.println(complexCondition.test("AZ")); // 输出：true
 System.out.println(complexCondition.test("BZ")); // 输出：false
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 4. 使用 `Predicate` 进行过滤
 
 ```java
@@ -212,8 +186,6 @@ names.stream()
      .filter(name -> name.startsWith("A"))
      .forEach(System.out::println); // 输出：Alice
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 5. 使用 `Supplier` 延迟加载资源
 
@@ -227,8 +199,6 @@ Supplier<String> configSupplier = () -> {
 System.out.println(configSupplier.get()); // 输出：Fetching configuration...
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 6. 使用 `Consumer` 记录日志
 
 专注于记录，但不返回结果。
@@ -238,8 +208,6 @@ Consumer<String> logger = message -> System.out.println("Log: " + message);
 logger.accept("User logged in"); // 输出：Log: User logged in
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 7. 使用 `BiConsumer` 处理键值对
 
 ```java
@@ -248,8 +216,6 @@ BiConsumer<String, Integer> printOrder = (item, quantity) ->
 
 printOrder.accept("Apple", 3); // 输出：Ordered 3x Apple
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 8. 使用 `UnaryOperator` 实现批量自增
 
@@ -265,8 +231,6 @@ List<Integer> incrementedNumbers = numbers.stream()
 System.out.println(incrementedNumbers); // 输出：[11, 12, 13, 14]
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 9. 使用 `BinaryOperator` 处理累积运算（聚合数据）
 
 像汇总账单，每次合并两个部分，直到得出总数。
@@ -279,8 +243,6 @@ int total = nums.stream()
 
 System.out.println(total); // 输出：15
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ## 六、总结
 

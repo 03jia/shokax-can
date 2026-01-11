@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:33:10
+date: 2024-12-19 19:05:11
 updated:
 description:
 cover:
@@ -30,16 +30,12 @@ cover:
    public static void main(String[] args)
    ```
 
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
    如果没有找到，JVM 会直接甩给你一张错误卡片：
 
    ```java
    Error: Main method not found in class MyApp.
    ```
-
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
+   
 3. **启动方法执行**
     一旦找到 `main` 方法，JVM 就知道有那么一个程序要执行了，会开一个线程（称为**主线程**）来运行它。就是这么简单粗暴！
 
@@ -82,15 +78,11 @@ public class MyApp {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 然后执行命令：
 
 ```bash
 java MyApp Hello World
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 输出结果：
 
@@ -98,8 +90,6 @@ java MyApp Hello World
 参数：Hello
 参数：World
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 这就是 `args` 的作用！你可以用它来传递配置参数，比如文件路径、启动模式等。
 
@@ -117,8 +107,6 @@ public class Application {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 表面上还是 `main` 方法，但真正的启动逻辑藏在 `SpringApplication.run` 里。
 
@@ -138,8 +126,6 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 Java 借鉴了这种设计，让开发者更容易理解程序的启动过程。
 
 ------
@@ -156,15 +142,11 @@ public class MyApp {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 满怀期待地运行，结果 JVM 狠狠地泼了他一盆冷水：
 
 ```java
 Error: Main method not found in class MyApp.
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 小明抱怨：“明明写了 `main` 方法，为什么找不到？”
  老师一拍桌子：“`static` 呢？你连门钥匙都没给齐给 JVM，怎么让它进门？”
@@ -176,7 +158,5 @@ public static void main(String[] args) {
     System.out.println("Hello, world!");
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 并成功迈入 Java 的世界。

@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:35:18
+date: 2024-12-21 11:00:00
 updated:
 description:
 cover:
@@ -104,7 +104,6 @@ Spring 通过 **组件扫描（Component Scanning）** 和 **注解识别** 将�
      field.set(userServiceImplInstance, userMapperBean);
      ```
 
-     ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -157,8 +156,6 @@ public class UserMapperImpl implements UserMapper {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 动态代理的优势在于：
 

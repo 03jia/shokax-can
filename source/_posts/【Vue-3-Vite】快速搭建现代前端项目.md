@@ -6,9 +6,9 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:23:06
+date: 2024-12-30 14:00:00
 updated:
-description:
+description: 
 cover:
 ---
 > 前端开发的世界瞬息万变，每隔一段时间就会冒出新的框架和工具。但是经典永不过时，基于对经典的理解，才能更好的去上手其他框架，比如基于 **Vue** 的 **Nuxt.js** 等让我们一起来探索 **Vue 3** 和 **Vite** 这对黄金搭档，手把手搭建一个现代前端项目
@@ -66,8 +66,6 @@ npm create vue@latest
 √ Add Prettier for code formatting?  No
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 启动后访问 `http://localhost:5173/`，迎接你的就是 Vue 3 的默认界面了，是不是超快？
 
 ### 2. 了解 Vite 配置文件
@@ -82,8 +80,6 @@ export default defineConfig({
   plugins: [vue()],
 });
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 如果需要自定义环境变量，在根目录创建 `.env` 文件即可，例如： `VITE_API_URL=https://api.example.com`
 
@@ -118,8 +114,6 @@ export default defineConfig({
 </html>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 > 【**关键点**】
 >
 > - `#app` 是 Vue 应用的挂载点，Vue 会通过 `main.ts` 将应用绑定到这个 `div` 元素。
@@ -140,8 +134,6 @@ import './global.css';
 // 创建 Vue 应用实例，并将其挂载到 #app 元素上
 createApp(App).mount('#app');
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > 【**关键点**】
 >
@@ -178,8 +170,6 @@ createApp(App).mount('#app');
 </style>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 > 【**关键点**】
 >
 > 1. `template` 部分
@@ -214,7 +204,7 @@ createApp(App).mount('#app');
 >      <style scoped>
 >      ```
 >
->      ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+>      
 
 ------
 
@@ -258,8 +248,6 @@ div {
 }
 </style>
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > **【注释说明】**
 >
@@ -320,8 +308,6 @@ button:hover {
 }
 </style>
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > **【注释说明】**
 >

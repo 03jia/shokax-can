@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:44:37
+date: 2025-01-01 18:44:37
 updated:
 description:
 cover:
@@ -38,8 +38,6 @@ UserMapper userMapper = ...; // Mapper 注入
 User user = userMapper.selectById(1L); // 根据主键查询
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 就这么简单，一行代码搞定！
 
 ### 2. **强大的条件构造器**
@@ -51,8 +49,6 @@ QueryWrapper<User> queryWrapper = new QueryWrapper<>();
 queryWrapper.eq("age", 18).like("name", "Jack");
 List<User> users = userMapper.selectList(queryWrapper);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 动态查询再也不用拼接字符串了，是不是很香？
 
@@ -66,8 +62,6 @@ Page<User> result = userMapper.selectPage(page, null);
 System.out.println(result.getRecords()); // 当前页数据
 System.out.println(result.getTotal()); // 总记录数
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 4. **自动代码生成器**
 
@@ -93,8 +87,6 @@ System.out.println(result.getTotal()); // 总记录数
 </dependency>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 2. **配置数据源**
 
 在 `application.yml` 中配置数据源（以操作 **MySQL** 为例）和 **MyBatis-Plus**：
@@ -111,8 +103,6 @@ spring:
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 把sql语句打印到控制台
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 3. **创建实体类**
 
 假设我们的数据库中有一个 `user` 表，我们可以创建对应的实体类：
@@ -128,8 +118,6 @@ public class User {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 4. **创建 Mapper 接口**
 
 继承 `BaseMapper` 即可：
@@ -139,8 +127,6 @@ public class User {
 public interface UserMapper extends BaseMapper<User> {
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 5. **调用 CRUD 接口**
 
@@ -159,8 +145,6 @@ public class UserController {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 运行后访问 `/user/list`，你会发现用户数据已经成功查询出来了！
 
@@ -182,8 +166,6 @@ public interface UserService extends IService<User> {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 #### **② 实现 Service 接口**
 
 创建实现类，继承 MyBatis-Plus 提供的 `ServiceImpl` 基类，自动注入 Mapper：
@@ -194,8 +176,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     // 可以在这里扩展自定义的业务逻辑方法
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### **③ 使用 Service**
 
@@ -225,7 +205,7 @@ public class UserController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+
 
 ------
 

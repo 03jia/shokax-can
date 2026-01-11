@@ -49,8 +49,6 @@ export function multiply(a, b) {
 export const pi = 3.14159;
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **引入多个成员**
 
 在另一个文件（比如 **app.js**）中，我们可以用 `import` 引入这些功能，像是演员们从剧本中读出台词：
@@ -64,8 +62,6 @@ console.log(multiply(2, 3));  // 输出: 6
 console.log(pi);              // 输出: 3.14159
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **重命名导入：用别名呼唤角色**
 
 有时候，我们需要给某个角色起个别名。`as` 关键字帮助我们做到了这一点：
@@ -77,8 +73,6 @@ import { add as sum, multiply as prod } from './utils.js';
 console.log(sum(2, 3));  // 输出: 5
 console.log(prod(2, 3)); // 输出: 6
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -97,8 +91,6 @@ export default function greet(name) {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **引入默认成员**
 
 在另一个文件中引入时，你**不需要花括号**，直接调用它：
@@ -109,8 +101,6 @@ import greet from './greet.js';
 
 console.log(greet('Alice')); // 输出: Hello, Alice!
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **暴露默认对象**
 
@@ -126,8 +116,6 @@ const config = {
 export default config;
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 在 **app.js** 中引入它：
 
 ```
@@ -136,8 +124,6 @@ import config from './config.js';
 
 console.log(config.apiUrl);  // 输出: https://api.example.com
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -150,8 +136,6 @@ console.log(config.apiUrl);  // 输出: https://api.example.com
 export { add, multiply } from './utils.js';
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 然后，你可以从 **index.js** 中引入这些内容，**index.js** 在这里相当于一个中介：
 
 ```
@@ -161,8 +145,6 @@ import { add, multiply } from './index.js';
 console.log(add(2, 3));        // 输出: 5
 console.log(multiply(2, 3));   // 输出: 6
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -183,8 +165,6 @@ async function loadUtils() {
 loadUtils();
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 5. **Node.js 中使用 ES6 模块**
 
 虽然 ES6 模块最初是为浏览器设计的，但它已经逐步被 Node.js 接纳。在 Node.js 中，要启用 ES6 模块，你可以选择以下两种方式之一：
@@ -198,8 +178,6 @@ loadUtils();
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 这样，你就可以在 Node.js 中愉快地使用 **`import`** 语法了：
 
 ```
@@ -208,8 +186,6 @@ import greet from './greet.js';
 
 console.log(greet('Alice')); // 输出: Hello, Alice!
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

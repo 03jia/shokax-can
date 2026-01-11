@@ -6,11 +6,13 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:36:23
+date: 2024-12-22 15:52:36
 updated:
 description:
 cover:
+
 ---
+
 > 在现代应用开发中，我们经常会遇到一些通用需求，比如日志记录、权限校验、事务管理等。这些需求**并不直接属于业务逻辑**，却必须融入系统的各个角落。如果按照传统开发方式，往往需要在每个业务代码中反复编写这些功能，结果**导致代码冗余、耦合性高，维护起来异常繁琐**。
 >
 > ------
@@ -157,8 +159,6 @@ public class UserService {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **切面定义**
 
 ```java
@@ -185,8 +185,6 @@ public class LoggingAspect {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **执行流程**
 
 1. **切点匹配**：`userServiceMethods` 定义的切点会匹配 `UserService` 的所有方法。
@@ -211,8 +209,6 @@ Logging before method execution...
 Adding user...
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ## 四、核心机制
 
 Spring AOP 基于动态代理来实现切面功能：
@@ -234,8 +230,6 @@ Spring AOP 基于动态代理来实现切面功能：
        <artifactId>spring-boot-starter-aop</artifactId>
    </dependency>
    ```
-
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 2. 定义切面类
 
@@ -273,8 +267,6 @@ Spring AOP 基于动态代理来实现切面功能：
    }
    ```
 
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ## 六、动态代理的原理
 
 以 `环绕通知` 为例，动态代理的执行流程如下：
@@ -309,7 +301,4 @@ public class ProxyUserService implements UserService {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 >  ***希望这篇博客能对你理解AOP有所启发，欢迎一起交流！***
-

@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:42:00
+date: 2024-12-28 21:30:00
 updated:
 description:
 cover:
@@ -34,8 +34,6 @@ public class UserController {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 **工作原理**：
 
@@ -69,8 +67,6 @@ public class UserController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 > 请求路径 `/user/profile` 会被映射到 `getUserProfile` 方法。
 
 **扩展功能**：
@@ -83,8 +79,6 @@ public class UserController {
       return "updateSuccess";
   }
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 还可以用简化注解，如 `@GetMapping`、`@PostMapping` 等。
 
@@ -109,8 +103,6 @@ public class UserController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 > 请求路径 `/user/greet?name=John` 会将参数 `name` 的值映射到 `userName`。
 
 **可选参数**：
@@ -121,15 +113,12 @@ public class UserController {
   @RequestParam(value = "age", defaultValue = "18") int userAge
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 标记为可选：
 
   ```java
   @RequestParam(value = "nickname", required = false) String nickname
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -151,8 +140,6 @@ public class UserController {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 请求路径 `/user/123` 会将 `123` 绑定到 `userId` 参数。
 
@@ -179,8 +166,6 @@ public class UserController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 假设请求参数为 `name=John&age=25`，Spring MVC 会将这些参数填充到 `User` 对象中。
 
 **预填充数据**： 当作用在方法上时，可以在 Controller 方法执行前为模型添加数据：
@@ -191,8 +176,6 @@ public void addDefaultAttributes(Model model) {
     model.addAttribute("appName", "Spring MVC Demo");
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -217,8 +200,6 @@ public void addDefaultAttributes(Model model) {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 控制器代码：
 
 ```java
@@ -232,8 +213,6 @@ public class UserController {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > **说明**：
 >
@@ -268,8 +247,6 @@ public class ApiController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 请求 `/api/hello` 会直接返回**字符串** `Hello, JSON!`。
 
 > **扩展**：在现代项目中，`@ResponseBody` 更常与 `@RestController` 一起使用。
@@ -294,8 +271,6 @@ public class ApiController {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 请求 `/api/user/123` 会返回一个 **JSON 对象**：
 
 ```java
@@ -304,8 +279,6 @@ public class ApiController {
   "name": "John"
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

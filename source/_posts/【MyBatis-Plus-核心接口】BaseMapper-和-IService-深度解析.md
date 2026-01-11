@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:47:22
+date: 2025-01-05 21:50:15
 updated:
 description:
 cover:
@@ -36,7 +36,6 @@ cover:
   int insert(T entity)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 删除操作
 
@@ -46,15 +45,11 @@ cover:
   int deleteById(Serializable id)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据主键批量删除 
 
   ```java
   int deleteBatchIds(Collection<? extends Serializable> idList)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 根据字段条件删除 
 
@@ -62,7 +57,6 @@ cover:
   int deleteByMap(Map<String, Object> columnMap)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 更新操作
 
@@ -72,15 +66,12 @@ cover:
   int updateById(@Param("et") T entity)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据条件更新 
 
   ```java
   int update(@Param("et") T entity, @Param("ew") Wrapper<T> updateWrapper)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 查询操作
 
@@ -90,15 +81,11 @@ cover:
   T selectById(Serializable id)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据主键批量查询 
 
   ```java
   List<T> selectBatchIds(Collection<? extends Serializable> idList)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 根据 Map 条件查询 
 
@@ -106,15 +93,11 @@ cover:
   List<T> selectByMap(Map<String, Object> columnMap)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据条件查询列表 
 
   ```java
   List<T> selectList(@Param("ew") Wrapper<T> queryWrapper)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 分页查询 
 
@@ -122,7 +105,6 @@ cover:
   IPage<T> selectPage(IPage<T> page, @Param("ew") Wrapper<T> queryWrapper)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -147,8 +129,6 @@ user.setName("Tom");
 user.setAge(25);
 userMapper.insert(user);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -175,15 +155,12 @@ userMapper.insert(user);
   boolean save(T entity)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 批量插入记录，提高插入效率。 
 
   ```java
   boolean saveBatch(Collection<T> entityList)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 删除操作
 
@@ -193,15 +170,11 @@ userMapper.insert(user);
   boolean removeById(Serializable id)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据 Map 条件删除 
 
   ```java
   boolean removeByMap(Map<String, Object> columnMap)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 根据主键批量删除 
 
@@ -209,7 +182,6 @@ userMapper.insert(user);
   boolean removeBatchIds(Collection<? extends Serializable> idList)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 更新操作
 
@@ -219,15 +191,11 @@ userMapper.insert(user);
   boolean updateById(T entity)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据条件更新 
 
   ```java
   boolean update(T entity, Wrapper<T> updateWrapper)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 批量更新记录，支持根据主键更新多个实体。 
 
@@ -235,7 +203,6 @@ userMapper.insert(user);
   boolean updateBatchById(Collection<T> entityList)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 查询操作
 
@@ -245,15 +212,11 @@ userMapper.insert(user);
   T getById(Serializable id)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据主键批量查询多个主键对应的记录。 
 
   ```java
   List<T> listByIds(Collection<? extends Serializable> idList)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 根据 Map 条件查询符合 Map 条件的记录。 
 
@@ -261,15 +224,11 @@ userMapper.insert(user);
   List<T> listByMap(Map<String, Object> columnMap)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 根据条件查询符合条件构造器的所有记录。 
 
   ```java
   List<T> list(Wrapper<T> queryWrapper)
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - 分页查询，配合分页插件，返回分页结果。 
 
@@ -277,7 +236,6 @@ userMapper.insert(user);
   IPage<T> page(IPage<T> page, Wrapper<T> queryWrapper)
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 使用示例
 
@@ -287,8 +245,6 @@ userMapper.insert(user);
 public interface UserService extends IService<User> {
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### UserServiceImpl
 
@@ -300,8 +256,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 #### 保存操作示例
 
 ```java
@@ -311,16 +265,12 @@ user.setAge(30);
 userService.save(user);
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 #### 查询操作示例
 
 ```java
 List<User> users = userService.listByIds(Arrays.asList(1, 2, 3));
 users.forEach(System.out::println);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 #### 分页查询示例
 
@@ -331,8 +281,6 @@ queryWrapper.gt("age", 18); // 年龄大于18
 IPage<User> result = userService.page(page, queryWrapper);
 result.getRecords().forEach(System.out::println);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -361,16 +309,12 @@ MyBatis-Plus 的代码生成器并不是简单的“生成代码文件”，它�
     SELECT * FROM user WHERE id = #{id} 
     ```
 
-    ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
   - `insert` 会根据实体类的字段生成
 
     ```sql
      INSERT INTO user (name, age) VALUES (#{name}, #{age})
     ```
-
-    ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
+  
 - **动态生成的好处**：
 
   - 开发者无需手写基础 SQL。
@@ -412,8 +356,6 @@ MyBatis-Plus 使用 MyBatis 的 `MapperProxy` **动态代理机制**，拦截 Ma
    SELECT * FROM {tableName} WHERE id = ?
    ```
 
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 3. **SQL 生成**：
 
    - MP 通过 **条件构造器**`Wrapper`和**元数据**（实体类中的元信息（字段名、类型、注解等）），将泛型 `User` 解析为表名 `user`。
@@ -425,8 +367,6 @@ MyBatis-Plus 使用 MyBatis 的 `MapperProxy` **动态代理机制**，拦截 Ma
      ```sql
      SELECT * FROM user WHERE id = 1
      ```
-
-     ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 4. **执行阶段**：
 

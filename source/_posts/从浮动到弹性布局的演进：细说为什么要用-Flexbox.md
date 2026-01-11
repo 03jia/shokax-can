@@ -22,7 +22,7 @@ cover:
 
 1. **清除浮动的麻烦**： 当一个元素设置为浮动时，它脱离了正常文档流，父容器的高度会因此塌陷。为了修复这个问题，开发者通常需要使用 clearfix 或 `overflow: hidden` 来清除浮动。虽然能解决问题，但依旧显得繁琐。相信使用过的开发者都有遇到这个问题吧，以下是margin塌陷的示意图：
 
-   ![img](https://s2.loli.net/2026/01/11/cFrNPn7ieZzx8bQ.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+   ![img](https://s2.loli.net/2026/01/11/cFrNPn7ieZzx8bQ.png)编辑
 
 2. **难以实现垂直居中**： 浮动布局并不支持灵活的垂直居中，开发者往往需要使用一些 hack 技巧，如设置 `line-height` 或配合 `position: absolute` 来实现。
 
@@ -76,8 +76,6 @@ cover:
   }
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - **`justify-content`**：控制主轴上子项的分布方式。
 
   ```
@@ -86,8 +84,6 @@ cover:
     justify-content: center; /* 居中 */
   }
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - **`align-items`**：控制交叉轴上子项的对齐方式。
 
@@ -98,7 +94,6 @@ cover:
   }
   ```
 
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 子项的属性
 
@@ -112,8 +107,6 @@ cover:
     flex-grow: 2; /* 双倍空间 */
   }
   ```
-
-  ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - **`flex-shrink`**：定义元素在主轴方向上如何缩小空间。
 
@@ -136,15 +129,11 @@ Flexbox 的最大亮点之一就是能够轻松实现元素的水平和垂直居
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ```
 <div class="container">
   <div>居中内容</div>
 </div>
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 2. 响应式导航栏
 
@@ -159,16 +148,12 @@ Flexbox 可以非常方便地创建响应式布局，如以下的导航栏：
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ```
 <div class="navbar">
   <div>Logo</div>
   <div>Menu</div>
 </div>
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 3. 等高列布局
 
@@ -185,8 +170,6 @@ Flexbox 让等高列变得轻松：
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ```
 <div class="container">
   <div class="item">列1</div>
@@ -194,8 +177,6 @@ Flexbox 让等高列变得轻松：
   <div class="item">列3</div>
 </div>
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 4. 动态网格布局
 
@@ -216,8 +197,6 @@ Flexbox 让等高列变得轻松：
   }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

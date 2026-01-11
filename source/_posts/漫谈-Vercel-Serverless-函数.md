@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:30:18
+date: 2024-12-16 23:32:09
 updated:
 description:
 cover:
@@ -32,8 +32,6 @@ cover:
   /api
     hello.js
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 这里 `hello.js` 就是一个 Serverless 函数文件，当你访问 `/api/hello` 路径时，Vercel 就会触发这个函数来处理请求。
 
@@ -78,8 +76,6 @@ mkdir my-vercel-project
 cd my-vercel-project
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 步骤 2：创建 `api` 文件夹
 
 在项目根目录下创建一个 `api` 文件夹，Vercel 会自动识别该目录下的文件并将它们转换为 API。
@@ -87,8 +83,6 @@ cd my-vercel-project
 ```bash
 mkdir api
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 步骤 3：编写 Serverless 函数
 
@@ -101,8 +95,6 @@ module.exports = (req, res) => {
 };
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 步骤 4：部署到 Vercel
 
 你只需要将项目推送到 GitHub 或 GitLab，然后连接到 Vercel。Vercel 会自动检测到 `api` 文件夹中的文件，并将它们部署为 Serverless 函数。只要你推送代码，Vercel 就会立即构建并部署。
@@ -113,8 +105,6 @@ git add .
 git commit -m "Add hello function"
 git push origin main
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > 接着，Vercel 会为你自动提供一个域名，你可以通过访问这个域名来调用 API，例如：`https://your-project-name.vercel.app/api/hello`。
 
@@ -137,8 +127,6 @@ module.exports = (req, res) => {
   }
 };
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - **GET 请求**：当你发送 GET 请求时，Vercel 返回一条简单的消息。
 - **POST 请求**：当你发送 POST 请求时，Vercel 会接收请求体中的数据（例如用户名），并返回个性化的消息。

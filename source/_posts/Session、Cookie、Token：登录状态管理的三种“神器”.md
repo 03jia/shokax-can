@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:45:21
+date: 2025-01-02 21:20:13
 updated:
 description:
 cover:
@@ -58,16 +58,12 @@ Cookie 是一段由**服务端生成**的小数据，**存储在客户端**（�
 response.setHeader('Set-Cookie', 'userId=12345; HttpOnly; Path=/');
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 客户端每次请求都会携带：
 
 ```java
 GET /dashboard HTTP/1.1
 Cookie: userId=12345
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -106,15 +102,11 @@ HttpSession session = request.getSession();
 session.setAttribute("user", user);
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 请求其他接口时获取 Session：
 
 ```java
 User user = (User) session.getAttribute("user");
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -154,8 +146,6 @@ eyJ1c2VySWQiOjEyMzQ1LCJyb2xlIjoiYWRtaW4ifQ.
 s5KCUO-qT-d0kPHiWUZf8CkIb1Xx9R97k5NgwMuEQHQ
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 服务端验证签名后，解密 Payload 获取用户信息。
 
 ### **代码示例**
@@ -191,8 +181,6 @@ public class JwtExample {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ------
 
 #### 验证 Token
@@ -226,8 +214,6 @@ public class JwtVerifyExample {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ------
 
 #### 依赖配置（Maven 示例）
@@ -252,8 +238,6 @@ public class JwtVerifyExample {
 </dependency>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ------
 
 #### 输出示例
@@ -264,15 +248,11 @@ public class JwtVerifyExample {
 生成的 Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NSIsImlhdCI6MTY1NjUwOTYwMCwiZXhwIjoxNjU2NTEzMjAwfQ.W_4hs3KkHhWzv5N48-LH38GxzNlRS0RNQhMB-uGcKxQ
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 验证 Token：
 
 ```
 验证通过，用户 ID: 12345
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

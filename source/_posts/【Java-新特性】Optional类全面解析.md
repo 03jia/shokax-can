@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:48:09
+date: 2025-01-07 09:00:00
 updated:
 description:
 cover:
@@ -39,8 +39,6 @@ Optional<String> emptyOptional = Optional.empty();     // 创建一个空 Option
 Optional<String> nullableOptional = Optional.ofNullable(null); // 允许值为空
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - `of()`：适用于值保证非空的场景，传入 null 会抛出异常。
 - `empty()`：显式创建一个空 Optional。
 - `ofNullable()`：适用于值可能为空的场景。
@@ -54,15 +52,11 @@ if (optional.isPresent()) {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 更优雅的写法：
 
 ```java
 optional.ifPresent(value -> System.out.println("Value: " + value)); // 支持通过 Consumer 动态生成值
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - `isPresent()`
 
@@ -77,8 +71,6 @@ optional.ifPresent(value -> System.out.println("Value: " + value)); // 支持通
 String value = optional.orElse("Default Value"); // 当值为空时返回默认值
 String computedValue = optional.orElseGet(() -> "Computed Default Value"); // 支持通过 Supplier 动态生成值
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 - **`orElse()`**：返回值或默认值。
 - **`orElseGet()`**：当需要动态计算默认值时使用。
@@ -96,8 +88,6 @@ String computedValue = optional.orElseGet(() -> "Computed Default Value"); // �
 String value = object != null ? object.getField() : "Default Value";
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 使用 Optional：
 
 ```java
@@ -105,8 +95,6 @@ String value = Optional.ofNullable(object)
                        .map(Object::getField)
                        .orElse("Default Value");
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -122,8 +110,6 @@ if (user != null && user.getAddress() != null) {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 使用 Optional：
 
 ```java
@@ -132,8 +118,6 @@ String city = Optional.ofNullable(user)
                       .map(Address::getCity)
                       .orElse("Unknown");
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -146,8 +130,6 @@ Optional.ofNullable(user)
         .filter(u -> u.getAge() > 18)
         .ifPresent(adult -> System.out.println("User is an adult"));
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -162,8 +144,6 @@ Optional<String> firstMatch = list.stream()
 firstMatch.ifPresent(System.out::println);
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ------
 
 ### 场景 5：与数据库操作结合
@@ -175,8 +155,6 @@ Optional<User> user = userRepository.findById(1);
 String username = user.map(User::getName)
                       .orElse("zhangsan");
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -203,16 +181,12 @@ String city = user.flatMap(User::getAddress)
                   .orElse("Unknown");
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### 2. 使用 `or()` 提供备用 Optional
 
 ```java
 Optional<String> fallback = Optional.of("Fallback Value");
 String result = optionalValue.or(() -> fallback).orElse("Default");
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

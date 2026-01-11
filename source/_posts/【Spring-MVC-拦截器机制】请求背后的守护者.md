@@ -84,8 +84,6 @@ public class RequestTimeInterceptor implements HandlerInterceptor {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### **3.2 注册拦截器**
 
 只是配置好一个拦截器类还无法实现功能，因为此时它只是一个普通的Bean，还需要通过配置将拦截器**注册到 Spring MVC 的拦截链**（`HandlerExecutionChain`）中。这个注册过程是由 `WebMvcConfigurer` 接口的 `addInterceptors` 方法完成的。通过 `addPathPatterns` 和 `excludePathPatterns` 指定拦截路径，避免全局生效。
@@ -114,8 +112,6 @@ public class WebConfig implements WebMvcConfigurer {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -148,8 +144,6 @@ public class AuthInterceptor implements HandlerInterceptor {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### **4.2 日志记录**
 
 记录请求路径、参数、处理时间等信息，方便问题排查。
@@ -170,8 +164,6 @@ public class LogInterceptor implements HandlerInterceptor {
 }
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ### **4.3 请求预处理**
 
 为每个请求添加通用的参数或调整编码。
@@ -191,8 +183,6 @@ public class RequestPreProcessorInterceptor implements HandlerInterceptor {
     }
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 

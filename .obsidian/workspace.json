@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "70d13cd12bd33cc6",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8c934db87282560",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69b45910ac22ac06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/【构建工具】现代开发的重要角色.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "【构建工具】现代开发的重要角色"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19b67b69595c84e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "249fd59d021486f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b384eec3f73d8ab5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "cc7b9b82a5533b69",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "037c668217e776f1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6fca907b955863e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "a071c91d6f5da182",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "022d5336797e0113",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "source/_posts/【构建工具】现代开发的重要角色.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "【构建工具】现代开发的重要角色 的反向链接列表"
+            }
+          },
+          {
+            "id": "a3cfed432b59c225",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "source/_posts/【构建工具】现代开发的重要角色.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "【构建工具】现代开发的重要角色 的出链列表"
+            }
+          },
+          {
+            "id": "7b3be624c43ba2b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "8555b6083d3df84a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "dd61dfbfe2c0fafd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "source/_posts/【构建工具】现代开发的重要角色.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "【构建工具】现代开发的重要角色 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "69b45910ac22ac06",
+  "lastOpenFiles": [
+    "shokaxTemp/waline-IDNZKML2.css",
+    "shokaxTemp/waline-H74TR6TT.js",
+    "shokaxTemp/siteInit.js.LEGAL.txt",
+    "shokaxTemp/siteInit.js",
+    "shokaxTemp/siteInit.css",
+    "shokaxTemp/quicklink-PTRRI23I.js",
+    "shokaxTemp/post-FZYYAI5Q.js.LEGAL.txt",
+    "shokaxTemp/post-FZYYAI5Q.js",
+    "shokaxTemp/index.esm-A3P37FF6.js",
+    "shokaxTemp/copy-tex-KSBDKIYB.js",
+    "shokaxTemp/comments-F4ZGS7LD.css",
+    "source/_posts/assets/e72b488d3f0a4f6bbd98152f5964060d.png",
+    "source/_posts/assets/e72b488d3f0a4f6bbd98152f5964060d-1768144391314-17.png",
+    "source/_posts/assets/7e017ce609914c8e8449e0f32560e1d1.png",
+    "source/_posts/assets/7e017ce609914c8e8449e0f32560e1d1-1768144124872-15.png",
+    "source/_posts/assets/8CNo5xe6ZVSg3QJ.png",
+    "source/_posts/assets/8CNo5xe6ZVSg3QJ-1768144114881-13.png",
+    "source/_posts/assets/098a06dd19514e5c895fc0cf8e0ea672.png",
+    "source/_posts/assets/098a06dd19514e5c895fc0cf8e0ea672-1768144036368-11.png",
+    "source/_posts/assets/7e017ce609914c8e8449e0f32560e1d1-1768143996819-8.png",
+    "source/_posts/assets/098a06dd19514e5c895fc0cf8e0ea672-1768143996818-7.png",
+    "source/_posts/【Java 新特性】深入浅出 Java Lambda 表达式.md",
+    "source/_posts/Untitled.md",
+    "source/_posts/开发场景中Java 集合的最佳选择.md",
+    "source/_posts/【网络请求的进化之旅】从表单到Axios.md",
+    "scaffolds/blog.md",
+    "source/_posts/【构建工具】现代开发的重要角色.md"
+  ]
+}

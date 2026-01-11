@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:29:44
+date: 2024-12-15 22:39:13
 updated:
 description:
 cover:
@@ -47,7 +47,7 @@ cover:
 
 ## 三、传统服务器 VS Serverless：核心区别
 
-![img](assets/a93ca104e7ee456e9605a4115dc04157.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+![img](assets/a93ca104e7ee456e9605a4115dc04157.png)
 
 我们可以从几个重要的方面来对比这两种架构：
 
@@ -97,8 +97,6 @@ module.exports = (req, res) => {
   res.status(200).json({ message: 'Hello from Serverless!' });
 };
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ### 步骤 2: 部署并测试
 

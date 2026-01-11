@@ -6,7 +6,7 @@ categories:
 tags:
   - null
   - null
-date: 2026-01-11 13:38:49
+date: 2024-12-25 20:30:37
 updated:
 description:
 cover:
@@ -28,8 +28,6 @@ cover:
 SELECT user_id AS id, user_name AS name FROM users;
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ```java
 public class User {
     private int id;
@@ -37,8 +35,6 @@ public class User {
     // Getters and setters...
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 > `user_id` 匹配 `id`（通过别名），`user_name` 匹配 `name`，值自动填充。
 
@@ -48,8 +44,6 @@ public class User {
 @Select("SELECT id, name FROM user WHERE id = #{id}")
 User selectUserById(int id);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 自动映射的好处是省时省力，但如果列名和字段名不一致时，就需要更灵活的手动映射。
 
@@ -76,8 +70,6 @@ User selectUserById(int id);
 </select>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 **工作流程**：
 
 1. 执行 SQL，获得 `ResultSet`。
@@ -98,8 +90,6 @@ User selectUserById(int id);
 @Select("SELECT user_id, user_name FROM user WHERE user_id = #{id}")
 User selectUserById(int id);
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 这里的 `@Result` 注解实现了类似 `resultMap` 的功能，让代码更紧凑。
 
@@ -129,8 +119,6 @@ User selectUserById(int id);
    </select>
    ```
 
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
    > 查询结果中的用户信息被映射到 `Order` 对象中的 `User` 字段。
 
 2. **集合映射**： 如果查询返回一个对象包含子对象集合，可以用 `<collection>` 定义集合的映射规则。
@@ -152,7 +140,6 @@ User selectUserById(int id);
    </select>
    ```
 
-   ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 ------
 
@@ -190,8 +177,6 @@ MyBatis 提供自动映射功能，可以将数据库中的**下划线命名**�
 </configuration>
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 ------
 
 ### **自动映射规则**
@@ -211,8 +196,6 @@ MyBatis 提供自动映射功能，可以将数据库中的**下划线命名**�
 SELECT user_id, created_at FROM users;
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 Java 类：
 
 ```java
@@ -221,8 +204,6 @@ public class User {
     private Date createdAt;
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
 SQL 查询结果会自动映射到 Java 对象中，无需额外配置。
 
