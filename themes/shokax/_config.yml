@@ -274,7 +274,8 @@ footer:
     color: "#ffc0cb"
   # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
   count: true
-  powered: true
+  # footer部分"Powered by Hexo & ShokaX" text
+  powered: false
   lantern:
     enable: true #是否开启
     word1: 中 #第一个字
