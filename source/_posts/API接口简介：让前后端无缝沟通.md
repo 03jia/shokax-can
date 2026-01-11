@@ -2,7 +2,7 @@
 title: API接口简介：让前后端无缝沟通
 keywords: []
 categories:
-  - [后端]
+  - 后端
 tags:
   - API
 date: 2024-12-04 22:47:38
