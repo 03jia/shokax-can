@@ -1,0 +1,22 @@
+local_backend: true # 开启本地开发模式
+backend:
+  name: github
+  repo: 03jia/shokax-can  # 仓库名称
+  branch: main             # 你的源码所在分支
+  site_domain: 你的域名.vercel.app # 你的 Vercel 访问地址
+
+display_name: "我的博客管理"
+
+media_folder: "source/assets/images" # 图片存放路径
+public_folder: "/assets/images"
+
+collections:
+  - name: "blog"
+    label: "文章"
+    folder: "source/_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "正文", name: "body", widget: "markdown" }
