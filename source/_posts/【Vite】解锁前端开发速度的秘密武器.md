@@ -4,12 +4,14 @@ keywords: []
 categories:
   - [前端,构建]
 tags:
-  - Vite
-  - 构建
+- Vite
+- 构建
 date: 2024-12-11 18:20:04
 updated:
 description: "剖析 Vite 的设计理念与性能优势，说明为何它能显著提升前端开发体验和构建速度。"
-cover: "https://s2.loli.net/2026/01/11/1nFywYhRWPf9Usl.jpg"
+cover: "https://s2.loli.net/2026/01/12/vZSexKjXBYcN9LV.png"
+---
+
 > 在前端开发的江湖中，有人偏爱 **Webpack** 的强大与稳定，有人钟情于 **Rollup** 的轻量与高效。而 **Vite**，这个后来居上的工具，却以“极致的快”和“极简的易”赢得了开发者的芳心。众所周知万事都有缘由，接下来我们就来深度剖析 Vite，看看它凭什么成为现代前端开发的宠儿。
 
 ## 一、什么是 Vite？

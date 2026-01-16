@@ -9,7 +9,7 @@ tags:
 date: 2024-12-19 19:05:11
 updated:
 description: "从 JVM 的视角解析 `main` 方法为何为程序入口，讲解类加载、方法定位与执行流程。"
-cover: "https://s2.loli.net/2026/01/12/vZSexKjXBYcN9LV.png"
+cover: "https://s2.loli.net/2026/01/12/sL1GZ7ToC5wvXW2.jpg"
 ---
 > 有没有想过，当你写下那段经典的 **`public static void main(String[] args)`** 时，到底发生了什么？为什么 JVM（Java Virtual Machine）能精准找到 `main` 方法作为程序的入口，然后开始执行？今天，我们就来聊聊这个「老生常谈」的话题，探 究其中的奥秘。
 

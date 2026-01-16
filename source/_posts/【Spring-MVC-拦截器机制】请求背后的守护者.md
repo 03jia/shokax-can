@@ -9,7 +9,7 @@ tags:
 date: 2026-01-11 13:43:27
 updated:
 description: "说明 Spring MVC 拦截器的用途、实现与配置，便于在请求生命周期中插入自定义逻辑。"
-cover: "https://s2.loli.net/2026/01/11/eCzhQLZoFY2Mq36.jpg"
+cover: "https://s2.loli.net/2026/01/12/xWKjGAiFEwrgdka.jpg"
 ---
 > 在 Web 应用中，每一个请求从用户发出到服务器响应，都需要经过一条完整的“处理链”。有时候，我们需要在这条链中加一些“守护者”，为请求执行**权限校验、日志记录，甚至是性能监控**。而在 Spring MVC 中，**拦截器（Interceptor）** 就扮演了这样的角色。
 

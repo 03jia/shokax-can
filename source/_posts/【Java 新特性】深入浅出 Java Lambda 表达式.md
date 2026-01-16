@@ -9,7 +9,7 @@ tags:
 date: 2025-01-04 20:04:39
 updated:
 description: "讲解 Java Lambda 表达式的语法与应用场景，展示如何用函数式风格简化代码。"
-cover: "https://s2.loli.net/2026/01/11/QvJuTqV6rsExtcM.jpg"
+cover: "https://s2.loli.net/2026/01/11/s6AKfIi1G8THlOy.jpg"
 ```
 
 >  Java 8 的 **Lambda 表达式**是一次编程方式的革命，让代码更加简洁、高效。本文将从基础语法入手，逐步深入讲解 Lambda 表达式的常用用法、进阶场景以及开发中的实战案。

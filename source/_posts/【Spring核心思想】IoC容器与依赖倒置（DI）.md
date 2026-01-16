@@ -10,7 +10,7 @@ tags:
 date: 2024-12-21 11:00:00
 updated:
 description: "在日常开发中如何优雅地管理对象创建与依赖；介绍 Spring 的 IoC/DI 与 MyBatis 动态代理的作用。"
-cover: "https://s2.loli.net/2026/01/12/4JCyu2HerqTIWSi.jpg"
+cover: "https://s2.loli.net/2026/01/12/qMSVNWespi3KlLz.png"
 ---
 > 在日常开发中，我们总会面临一个问题：**如何优雅地管理对象的创建和依赖？** 你可能会写一堆代码来手动构造对象，但这种方式繁琐且难以维护。而当项目变得复杂，依赖链拉长，手动管理对象的方式很快就会捉襟见肘。
 >

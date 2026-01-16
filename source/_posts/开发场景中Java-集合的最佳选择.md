@@ -9,7 +9,7 @@ tags:
 date: 2024-12-20 23:26:58
 updated:
 description: "比较 List、Set 与 Map 在常见开发场景下的适用性与优缺点，帮助选择最合适的集合类型。"
-cover: "https://s2.loli.net/2026/01/12/iKhf235EcvkaG17.jpg"
+cover: "https://s2.loli.net/2026/01/12/PTF98ZRIY2y7L5G.jpg"
 ---
 > 在 Java 开发中，集合类是处理数据的核心工具。合理选择集合，不仅可以提高代码效率，还能让代码更简洁。本篇文章将重点探讨 **List、Set** 和 **Map** 的适用场景及优缺点，帮助你在实际开发中找到最佳解决方案。
 

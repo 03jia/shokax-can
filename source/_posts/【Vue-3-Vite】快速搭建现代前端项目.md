@@ -9,7 +9,7 @@ tags:
 date: 2024-12-30 14:00:00
 updated:
 description: "介绍如何使用 Vue 3 与 Vite 快速搭建现代前端项目，并说明两者的优势与实践步骤。"
-cover: "https://s2.loli.net/2026/01/12/GkWjn2b7QFuVqiB.jpg"
+cover: "https://s2.loli.net/2026/01/12/LuC5FjxXMnPZWfy.jpg"
 ---
 > 前端开发的世界瞬息万变，每隔一段时间就会冒出新的框架和工具。但是经典永不过时，基于对经典的理解，才能更好的去上手其他框架，比如基于 **Vue** 的 **Nuxt.js** 等让我们一起来探索 **Vue 3** 和 **Vite** 这对黄金搭档，手把手搭建一个现代前端项目
 

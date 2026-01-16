@@ -9,7 +9,7 @@ tags:
 date: 2024-12-25 20:30:37
 updated:
 description: "介绍 MyBatis 查询结果映射的原理，说明反射与映射规则如何将结果集转换为 Java 对象。"
-cover: "https://s2.loli.net/2026/01/12/iLGB42y5qduVvAO.jpg"
+cover: "https://s2.loli.net/2026/01/12/gnx5jopdcbJAtCV.jpg"
 ---
 > MyBatis 的**查询结果映射（Result Mapping）**功能，像是一个桥梁，连接了数据库中的结果集和 Java 中的对象。通过它，SQL 查询**返回的表数据**被自动转换为我们熟悉的 **Java 对象**。这一过程的背后，依靠的是 **反射机制** 和 **映射规则**。接下来，我们一起来看看它的工作原理以及如何实现各种映射。
 

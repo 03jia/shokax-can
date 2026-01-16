@@ -9,7 +9,7 @@ tags:
 date: 2024-12-29 09:00:00
 updated:
 description: "介绍 Spring MVC 的数据绑定与基于注解的验证机制，确保请求数据的安全性与准确性。"
-cover: "https://s2.loli.net/2026/01/11/iKUr12f9tRavXz7.jpg"
+cover: "https://s2.loli.net/2026/01/12/4JCyu2HerqTIWSi.jpg"
 ---
 > 在 Web 开发中，从接收用户请求到处理数据，再到确保数据的安全和准确性，数据绑定和验证是两大核心步骤。Spring MVC 提供了强大的 **数据绑定** 和 **验证机制**，帮助开发者高效、安全地管理请求参数。
 

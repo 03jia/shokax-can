@@ -9,7 +9,7 @@ tags:
 date: 2025-01-09 10:00:00
 updated:
 description: "说明 MyBatis-Plus 在主键生成与实体类映射方面的策略与常见实践。"
-cover: "https://s2.loli.net/2026/01/11/1nFywYhRWPf9Usl.jpg"
+cover: "https://s2.loli.net/2026/01/12/eCzhQLZoFY2Mq36.jpg"
 ---
 
 >在开发中，数据库和 <font color=red>**Java 对象的映射（ORM）**</font>是一个绕不开的话题，而 MyBatis-Plus（MP）作为一款优秀的 <font color='red'>**ORM 工具**</font>，帮我们简化了繁琐的数据库操作。本文将从数据库基础、表与实体映射、复杂对象映射、自定义 SQL 等角度，深入探讨 MP 的数据库映射功能。

@@ -8,7 +8,7 @@ tags:
 date: 2024-12-27 23:04:587
 updated:
 description: "解析 Spring MVC 的核心组件与请求处理流程，帮助读者理解各环节的职责与执行顺序。"
-cover: "https://s2.loli.net/2026/01/11/gnx5jopdcbJAtCV.jpg"
+cover: "https://s2.loli.net/2026/01/12/SCu6eQWzMcF4afD.jpg"
 ---
 
 在 Web 应用开发中，处理用户请求的逻辑常常会涉及到**路径匹配、请求分发、视图渲染**等多个环节。Spring MVC 作为一款强大的 Web 框架，将这些复杂的操作高度抽象化，通过组件协作简化了开发者的工作。
